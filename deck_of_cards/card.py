@@ -73,6 +73,7 @@ class Card(object):
         possible.
 
         'Ace' for 1
+
         'Joker' for joker
 
         :returns: human-readable string for face cards or card rank
@@ -127,3 +128,23 @@ class Card(object):
         :rtype: bool
         """
         return (JOKER_RANK == self.get_rank()) and (JOKER_SUIT == self.get_suit())
+
+    def __eq__(self, other):
+        """Override equality method
+
+        :returns: True if two objects are cards and have the same :attr:`_rank` and :attr:`_suit`
+        :rtype: bool
+        """
+        if type(other) is type(self):
+            if (other.get_rank() == self.get_rank()) and (other.get_suit() == self.get_suit()):
+                return True
+
+        return False
+
+    def __ne__(self, other):
+        """Override inequality method
+
+        :returns: not :attr:`__eq__`
+        :rtype: bool
+        """
+        return not self.__eq__(other)

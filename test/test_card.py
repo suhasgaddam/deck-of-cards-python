@@ -99,3 +99,17 @@ def test_joker_invalid_rank():
     for rank in xrange(1, 14, 1):
         with pytest.raises(ValueError):
             new_card = card.Card(rank, 'joker')
+
+def test_equality():
+    joker_1 = card.Card(card.JOKER_RANK, card.JOKER_SUIT)
+    joker_2 = card.Card(card.JOKER_RANK, card.JOKER_SUIT)
+    assert joker_1 == joker_2
+
+    ace_of_spades_1 = card.Card(1, 'spades')
+    ace_of_spades_2 = card.Card(1, 'spades')
+    assert ace_of_spades_1 == ace_of_spades_2
+
+def test_ineqality():
+    ace_of_spades = card.Card(1, 'spades')
+    ace_of_clubs = card.Card(1, 'clubs')
+    assert ace_of_spades != ace_of_clubs
