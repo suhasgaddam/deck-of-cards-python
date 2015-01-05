@@ -3,6 +3,8 @@ deck-of-cards-python
 
 A Python Implementation Of A Deck of Cards
 
+[![Documentation Status](https://readthedocs.org/projects/deck-of-cards-python/badge/?version=latest)](http://deck-of-cards-python.readthedocs.org/en/latest/)
+
 Example Usage
 ```python
 import deck_of_cards.deck as deck
