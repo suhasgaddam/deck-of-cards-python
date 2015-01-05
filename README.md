@@ -3,6 +3,7 @@ deck-of-cards-python
 
 A Python Implementation Of A Deck of Cards
 
+[![Build Status](https://travis-ci.org/suhasgaddam/deck-of-cards-python.svg?branch=master)](https://travis-ci.org/suhasgaddam/deck-of-cards-python)
 [![Documentation Status](https://readthedocs.org/projects/deck-of-cards-python/badge/?version=latest)](http://deck-of-cards-python.readthedocs.org/en/latest/)
 
 Example Usage
